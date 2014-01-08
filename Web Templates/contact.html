@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>El Concilio of San Mateo County</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/index.css" rel="stylesheet">
+    
+    <!--Google Maps API Integration-->
+    <style>
+      #map_canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!--Create map with location and marker centered on El Concilio-->
+    <script>
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(37.580912, -122.343705);
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: myLatlng,
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'El Concilio of San Mateo'
+        });
+      }
+
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+  </head>
+
+  <body>
+
+    <!--This is our navbar unit.-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo-nav" href="index.html"><img src="http://i.imgur.com/LqsVLrH.jpg&text=Logo"></a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="scheduler.html">Scheduler</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        <!-- /.navbar-collapse -->
+        </div>
+      <!-- /.container -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+    <center><P><FONT SIZE="+3" FACE="Arial"><B>OUR LOCATION</B></FONT></P></center>
+
+    <div class="row"><center>
+      <div class="col-lg-12">
+        <p>El Concilio of San Mateo County<br>12419 Burlingame Avenue<br>Suite N.<br>Burlingame, California 94010<br>Phone: (650) 373-1080<br>Fax: (650) 373-1090</p>
+      </div>
+    </div></center>
+
+
+    <!--Google Maps-->
+    <center><div id="map_canvas"></div></center>
+
+    <br>
+      
+    <center><P><FONT SIZE="+3" FACE="Arial"><B>CONTACT INFORMATION</B></FONT></P></center><br>
+
+    <table class="table table-hover">  
+      <thead>  
+        <tr>  
+          <th>Program</th>  
+          <th>Contact Person</th>  
+          <th>Phone Number</th>  
+          <th>E-Mail Address</th>  
+        </tr>  
+      </thead>  
+      <tbody>  
+        <tr>  
+          <td>El Concilio of San Mateo County (ECSMC)<br><br>Nuestro Canto de Salud (NCDS)</td>  
+          <td><b>Ortensia Lopez</b><br>Executive Director<br><br><b>Gloria Flores-Garcia</b><br>Associate Director<br><br><b>Carol D. Hatten</b><br>Executive Assistant</td>  
+          <td>(650) 373-1087<br><br><br>(650) 373-1084<br><br><br>(650) 373-1095</td>  
+          <td><a href="or10sia@el-concilio.com">or10sia@el-concilio.com</a><br><a href="or10sia@yahoo.com">or10sia@yahoo.com</a><br><br><a href="gfgarcia1@yahoo.com">gfgarcia1@yahoo.com</a></td>  
+        </tr>  
+        <tr>  
+          <td>Fiscal Department</td>  
+          <td><b>Maria Mendez</b><br>Director</td>  
+          <td>(650) 373-1099</td>  
+          <td><a href="or10sia@el-concilio.com">or10sia@el-concilio.com</a></td>  
+        </tr>  
+        <tr>  
+          <td>Chronic Disease Program/NCDS Clinics</td>  
+          <td><b>Jeannette Quintana</b><br>Chronic Disease Manager</td>  
+          <td>(650) 578-7140 Ext. 8132</td>  
+          <td><a href="jeannette.marialuisaquin@gmail.com">jeannette.marialuisaquin@gmail.com</a></td>  
+        </tr>
+        <tr>  
+          <td>Physical Activities/GATE</td>  
+          <td><b>Victoria Avila</b><br>Community Program Specialist</td>  
+          <td>(650) 780-7514</td>  
+          <td><a href="vickyavila@yahoo.com">vickyavila@yahoo.com</a><br><a href="vickyavila@aol.com">vickyavila@aol.com</a></td>  
+        </tr>
+        <tr>  
+          <td>Emergency Services Partnership</td>  
+          <td><b>Silvia l. Floresa</b><br><br>Director</td>  
+          <td>(650) 330-7431</td>  
+          <td><a href="pls@gmail.com">we need this person's e-mail address</a></td>  
+        </tr>  
+        <tr>  
+          <td>HIV/AIDS</td>  
+          <td><b>Victoria Avila</b><br><br><br><b>Noe Contreras</b></td>  
+          <td>(650) 780-7514<br><br><br>(650) 373-1094</td>  
+          <td><a href="vickyavila@yahoo.com">vickyavila@yahoo.com</a><br><a href="vickyavila@aol.com">vickyavila@aol.com</a><br><br><a href="n_jalisco@yahoo.com">n_jalisco@yahoo.com</a></td>  
+        </tr>      
+      </tbody>  
+    </table> 
+
+  </div>
+
+    <footer>
+      <hr>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright &copy; El Concilio of San Mateo 2013</p>
+        </div>
+      </div>
+    </footer>
+
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

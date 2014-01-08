@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Job Opportunities</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <style>
+      .sidebar-box {
+        max-height: 120px;
+        position: relative;
+        overflow: hidden;
+      }
+      .sidebar-box .read-more { 
+        position: absolute; 
+        bottom: 0; left: 0;
+        width: 100%; 
+        text-align: center; 
+        margin: 0; padding: 30px 0; 
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo-nav" href="index.html"><img src="http://i.imgur.com/LqsVLrH.jpg&text=Logo"></a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="scheduler.html">Scheduler</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Job Opportunities at ECSMC</h1>
+          <p>Posted below are open opportunites currently open at ECSMC.
+            <br><b>Click on the job titles for more information.</b></p>
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+      </div>
+      
+      <hr>
+      
+      <div class="row">
+        <div class="col-lg-12">
+          <a href="#"><h2 class="open">Chronic Disease Manager [+]</h3></a>
+          <h3>Job Summary</h3>
+            <p>Under direction of the Associate Executive Director this individual will be responsible for the general operation of the diabetes clinic and community health prevention programs and serve as a liaison between the county clinic and El Concilio. The individual hired will supervise and direct clinic and community staff in the performance of their duties, monitor progress and performance, data entry, record keeping and maintenance of program documents. In addition, assist in program development, planning and program reporting. Familiarity and experience with databases essential.</p>
+          <div class="showpanel">
+            <h3>Typical Tasks</h3>
+              <li>Manage the general operations of Nuestro Canto de Salud Diabetes Clinic</li>
+              <li>Maintain and develop new chronic disease programs for secondary prevention services</li>
+              <li>Perform quality assurance measures for efficiency of data entry</li>
+              <li>Understand File Maker Pro data system to be able to troubleshoot, monitor data and problem solve</li>
+              <li>Update all health education presentations used by ECSMC programs as needed</li>
+              <li>Establish a centralized policy & functional manual for coordinated and integrated services</li>
+              <li>Provide training and technical assistance to ethnic-based agencies/groups interested in promoting chronic disease prevention</li>
+              <li>Represent El Concilio in community collaboration and organization events</li>
+              <li>Performs other related duties as assigned by Supervisor</li>
+            <h3>Minimum Qualifications</h3>
+              <li>4 years College education in health or social sciences</li>
+              <li>3 years experience which demonstrates the possession and application of the knowledge and abilities</li>
+              <li>Valid and Current California License and Automobile Insurance (Proof of Insurance required)</li>
+              <li>Standard community resources of health education; management and supervision</li>
+              <li>Program planning process and Consultation techniques</li>
+              <li>Respect for multi-cultural and spiritual diversity</li>
+              <li>Understanding of community interdependence</li>
+              <li>General knowledge of preventive medicine and epidemiology</li>
+              <li>Knowledge and experience working with computers and data bases</li>
+              <li>Planning, implementation, and evaluation of community health education programs</li>
+              <li>Provide health education consultation and develop relationships with a wide range of individuals, organizations and entities</li>
+              <li>Communicate effectively, both orally and in writing in both Spanish and English, with individuals and groups from varying cultural, ethnic and education backgrounds</li>
+              <li>Follow organizational policies and procedures, government laws, regulations, and guidelines</li>
+            <h3>Application Deadline: Until Filled</h3>
+            <div class="col-lg-3">
+              <p><b>To apply, please submit your resume to:</b></p>
+            </div>
+            <div class="col-lg-4">
+              <p>El Concilio of San Mateo County
+                <br>1419 Burlingame Avenue, Suite N
+                <br>Burlingame, CA  94010
+                <br>Phone: (650) 373-1080
+                <br>Fax: (650) 373-1090</p>
+            </div>          
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright &copy; El Concilio of San Mateo 2013</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+      $('.showpanel').hide();
+      $(document).ready(function(){
+          $('.open').click(function(){
+              var link = $(this);
+              $('.showpanel').slideToggle('slow', function() {
+                  if ($(this).is(":visible")) {
+                       link.text('Chronic Disease Manager [-]');                
+                  } else {
+                       link.text('Chronic Disease Manager [+]');                
+                  }  
+              });
+                  
+          });  
+
+      });
+    </script>
+
+
+
+  </body>
+</html>
