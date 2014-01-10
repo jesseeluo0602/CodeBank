@@ -1,0 +1,3 @@
+http://www-inst.eecs.berkeley.edu/~cs61c/fa13/proj/04/
+
+In this project you will be using Logisim to create a 16-bit two-cycle processor. It is similar to MIPS, except that both the datapath and the instructions are 16-bits wide, it has only 4 registers, and memory addresses represent 16-bit words instead of 8-bit bytes (word-addressed instead of byte-addressed).
