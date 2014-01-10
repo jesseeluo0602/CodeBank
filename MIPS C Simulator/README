@@ -1,0 +1,3 @@
+http://www-inst.eecs.berkeley.edu/~cs61c/fa13/proj/02/
+
+In this project, you will create an instruction interpreter for a subset of MIPS code. You'll provide the machinery to decode and execute a couple dozen MIPS instructions. You're creating what is effectively a miniature version of MARS!
