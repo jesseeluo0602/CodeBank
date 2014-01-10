@@ -1,0 +1,14 @@
+http://www-inst.eecs.berkeley.edu/~cs61c/fa13/proj/03/
+
+
+
+Optimize a single image convolution for image of size 240 by 240. Place your solution in a file called part1.c . You'll find a naive implementation in it already for you to start optimizing on.
+
+We recommend that you implement your optimizations in the following order:
+
+Consider Register Blocking (load data into a register once and then use it several times)
+Keep the main line (or few lines) of multiplying and adding in your 2D convolution as uncluttered as possible. You don't want if-statements and such slowing down that main area of computation
+Optimize loop ordering (see lab 7)
+Use SSE Instructions (see lab 8)
+Implement Loop Unrolling (see lab 8)
+Compiler Tricks (minor modifications to your source code can cause the compiler to produce a faster program)
